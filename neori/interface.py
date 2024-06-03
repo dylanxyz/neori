@@ -262,6 +262,7 @@ class GuidInterface:
         self.panel = UIPanel(
             manager=manager,
             relative_rect=Rect(0, 0, 520, 600),
+            visible=False,
             anchors={'center':'center'},
             object_id=ID("#guide-panel"))
 
