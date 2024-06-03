@@ -7,6 +7,9 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+numpy = "^1.26.4"
+pygame = "^2.5.2"
+pygame-gui = "^0.6.10"
 
 
 [build-system]

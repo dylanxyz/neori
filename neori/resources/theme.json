@@ -1,0 +1,187 @@
+{
+    "@text": {
+        "font": {
+            "name": "silkscreen",
+            "size": "16",
+
+            "regular_resource": {
+                "package": "neori.resources.fonts",
+                "resource": "Silkscreen-Regular.ttf"
+            },
+
+            "bold_resource": {
+                "package": "neori.resources.fonts",
+                "resource": "Silkscreen-Bold.ttf"
+            }
+        }
+    },
+
+    "@menu-button": {
+        "colours": {},
+
+        "font": {
+            "name": "silkscreen",
+            "size": "18",
+            "bold": "1",
+            "regular_resource": {
+                "package": "neori.resources.fonts",
+                "resource": "Silkscreen-Regular.ttf"
+           },
+           "bold_resource": {
+                "package": "neori.resources.fonts",
+                "resource": "Silkscreen-Bold.ttf"
+            }
+        },
+
+        "images": {
+            "normal_image": {
+                "package": "neori.resources.ui",
+                "resource": "button_normal.png"
+            },
+            "hovered_image": {
+                "package": "neori.resources.ui",
+                "resource": "button_hovered.png"
+            },
+            "selected_image": {
+                "package": "neori.resources.ui",
+                "resource": "button_active.png"
+            }
+        },
+
+        "misc": {
+            "shape": "rectangle",
+            "border_width": "0",
+            "text_vert_alignment": "top",
+            "text_vert_alignment_padding": "9"
+        }
+    },
+
+    "@menu-panel": {
+        "colours": {
+            "dark_bg": "#00000000",
+            "normal_border": "#00000000"
+        }
+    },
+
+    "#gameover": {
+        "misc": {
+            "line_spacing": "1.5"
+        }
+    },
+
+    "#gameover.panel":{
+        "images": {
+            "background_image": {
+                "package": "neori.resources.ui",
+                "resource": "panel_gameover.png"
+            }
+        },
+
+        "misc": {
+            "shape": "rectangle",
+            "border_width": "0"
+        }
+    },
+
+    "#gameover.title": {
+        "font": { "name": "silkscreen", "size": "24", "bold": "1" },
+        "colours": { "normal_text": "#ff0f0d" }
+    },
+
+    "#gameover.score": {
+        "colours": { "normal_text": "#0cff0f" },
+        "misc": { "text_horiz_alignment": "right" }
+    },
+
+    "#gameover.size": {
+        "colours": { "normal_text": "#0cff0f" },
+        "misc": { "text_horiz_alignment": "right" }
+    },
+
+    "#gameover.time": {
+        "colours": { "normal_text": "#0cff0f" },
+        "misc": { "text_horiz_alignment": "right" }
+    },
+
+    "#top-bar": {
+        "colours": { "dark_bg": "#161616" },
+        "misc": {
+            "shape": "rectangle",
+            "border_width": "0",
+            "shadow_width": "0"
+        }
+    },
+
+    "#effect-bar": {
+        "colours": {
+            "unfilled_bar": "#1e3a8a",
+            "filled_bar": "#2563eb"
+        },
+        "misc": {
+            "shape": "rectangle",
+            "border_width": "0",
+            "shadow_width": "0"
+        }
+    },
+
+    "#score": {
+        "misc": {
+            "text_horiz_alignment": "left"
+        }
+    },
+
+    "#charge": {
+        "colours": {
+            "normal_text": "#f59e0b"
+        }
+    },
+    "#guide-panel": {
+        "colours": {
+            "dark_bg": "#27272A"
+        }
+    },
+
+    "#guide-title": {
+        "font": {
+            "name": "silkscreen",
+            "size": "24",
+            "bold": "1"
+        }
+    },
+
+    "#guide-close": {
+        "colours": {
+            "normal_bg": "#b91c1c",
+            "hovered_bg": "#ef4444"
+        },
+        "font": {
+            "name": "silkscreen",
+            "size": "16",
+            "regular_resource": {
+                "package": "neori.resources.fonts",
+                "resource": "Silkscreen-Regular.ttf"
+           }
+        },
+        "misc": {
+            "line_spacing": "1.3",
+            "shape": "rounded_rectangle",
+            "border_width": "0",
+            "shadow_width": "0",
+            "shape_corner_radius": "3"
+        }
+    },
+
+    "#guide-text": {
+        "colours": {
+            "dark_bg": "#27272A00"
+        },
+
+        "misc": {
+            "padding": "16,16",
+            "line_spacing": "1.3",
+            "shape": "rectangle",
+            "border_width": "0",
+            "shadow_width": "0"
+        }
+    }
+}
