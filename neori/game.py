@@ -301,7 +301,8 @@ class NeoriGame:
         infections = cell_count[Cell.Infected]
         healthy = cell_count[Cell.Healthy]
         immune = cell_count[Cell.Immune]
-        non_infected = healthy + immune
+        spawn_immune = cell_count[Cell.SpawnImmune]
+        non_infected = healthy + immune + spawn_immune
 
         if infections == 0 and self.state.infections > 0:
             self.state.score += 10
@@ -392,6 +393,7 @@ class NeoriGame:
         for i, food in enumerate(foods):
             if world.curr[*food.pos] == Cell.Infected:
                 foods.pop(i)
+                continue
 
             if snake.head == food.pos:
                 foods.pop(i)
