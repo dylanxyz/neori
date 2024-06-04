@@ -40,7 +40,7 @@ neori/                  -> Biblioteca principal
 ## Executando
 
 Antes de tentar executar o jogo, veja se possui as
-[depências](#depêndencias) necessárias instaladas.
+[depêdencias](#depêndencias) necessárias instaladas.
 
 ---
 
