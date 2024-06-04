@@ -4,6 +4,11 @@
 do [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)
 e [Snake Game](https://en.wikipedia.org/wiki/Snake_(video_game_genre)).
 
+|                         |                             |
+|:-----------------------:|:---------------------------:|
+|![Preview Menu](screenshots/menu.png)|![Preview Guide](screenshots/guide.png)|
+|![Preview Game](screenshots/game.png)|![Preview Game-Over](screenshots/gameover.png)|
+
 ## Motivação
 
 Este projeto foi resultado de uma atividade acadêmica
@@ -37,22 +42,6 @@ neori/                  -> Biblioteca principal
     game.py             -> Arquivo principal, contém a lógica da aplicação
 ```
 
-## Executando
-
-Antes de tentar executar o jogo, veja se possui as
-[depêdencias](#depêndencias) necessárias instaladas.
-
----
-
-Execute o arquivo `application.py` com python:
-
-```
-python application.py
-```
-
-Ou se tiver no Windows, encontre o arquivo e o execute
-pelo Explorador de Arquivos.
-
 ## Depêndencias
 
 - [numpy](https://numpy.org/)
@@ -70,3 +59,17 @@ ou
 ```
 python -m pip install numpy pygame_gui
 ```
+
+## Executando
+
+Antes de tentar executar o jogo, veja se possui as
+[depêndencias](#depêndencias) necessárias instaladas.
+
+Execute o arquivo `application.py` com python:
+
+```
+python application.py
+```
+
+Ou se tiver no Windows, encontre o arquivo e o execute
+pelo Explorador de Arquivos.
