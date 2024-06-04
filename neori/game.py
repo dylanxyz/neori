@@ -94,7 +94,7 @@ class NeoriGame:
         self.screen_bg = Surface(self.screen.get_size())
         self.events = GameEvents()
         self.state = GameState(*self.canvas_size, 15)
-        self.ui_manager = UIManager(self.screen.get_size(), THEME_FILE)
+        self.ui_manager = UIManager(self.screen.get_size(), THEME_FILE, enable_live_theme_updates=False)
 
         self.ui_manager.add_font_paths('silkscreen',
             bold_path=os.path.join(RESOURCES, 'fonts/Silkscreen-Bold.ttf'),
@@ -118,7 +118,9 @@ class NeoriGame:
     def loop(self):
         while self.state.is_running:
             self.frametime = self.clock.tick(self.framerate)/1000.0
-            self.timer.update(self.frametime)
+
+            if not self.state.is_paused:
+                self.timer.update(self.frametime)
 
             self.poll_events()
             self.screen.blit(self.screen_bg, (0, 0))
@@ -266,9 +268,6 @@ class NeoriGame:
             self.events.food.update(self.frametime)
             self.events.flames.update(self.frametime)
             self.events.infection.update(self.frametime)
-
-        if self.state.charge > 3:
-            self.state.charge = 3
 
         if not self.main_menu.is_open:
             self.update_snake()
